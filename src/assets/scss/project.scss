@@ -1,0 +1,163 @@
+.projectContainer{
+  width: 113rem!important;
+}
+.projectBanner{
+  transform: scale(1)!important;
+}
+
+.project-advantages {
+  padding-top: 4rem;
+  width: 100%;
+  @media  only screen and (max-width: 1150px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .ant-card-body {
+    //height: 14rem;
+    .ant-card-meta-title{
+      font-size: 2.7rem;
+      font-weight: 700;
+    }
+    .ant-card-meta-description{
+      font-size: 1.9rem;
+    }
+    @include for-phone-only {
+        height: 17rem;
+    }
+  }
+
+  .project-content {
+    color: #1e1e20;
+    font-size: 1.7rem;
+    width: 100%;
+  }
+}
+
+
+.project-subtitle {
+  font-size: 3.6rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+
+  @include for-phone-only {
+      font-size: 2.5rem;
+      font-weight: bold;
+  }
+}
+
+.ant-card-cover{
+  margin-top: 0px!important;
+  margin-right: 0px!important;
+  margin-left: 0px!important;
+}
+.ant-card-bordered{
+  &:hover{
+    border: 1px solid #1493ff;
+  }
+}
+
+.unique-block {
+font-size: 1rem !important;
+color: #0e1718 !important;
+display: grid;
+grid-template-columns: 48.5% 48.5%;
+//grid-template-rows: 25% 25% 25% 25%;
+grid-column-gap: 3%;
+
+.ant-card {
+margin-bottom: 3rem;
+}
+
+@include for-phone-only {
+  .ant-card-body {
+      padding: 2rem 1rem;
+  }
+  .ant-card-meta-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+  }
+  .ant-card-meta-description {
+      font-size: 1.4rem;
+  }
+}
+}
+
+.feature-block {
+font-size: 1rem !important;
+color: #0e1718 !important;
+
+img {
+width: 44rem;
+}
+.ant-col {
+padding-bottom: 2rem;
+}
+}
+
+.architecture-block {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  padding-bottom: 5rem;
+}
+
+.project-card{
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  position: relative;
+  margin-bottom: 3rem;
+  &:hover{
+    border: 1px solid #1493ff;
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+  .pic-des-container{
+    position: absolute;
+    bottom: 4rem;
+    left: 4.5rem;
+    width: 47rem;
+    padding: 2.1rem;
+    border: 1px solid #f0f0f0;
+    background: #FFFFFF;
+    .pic-title{
+      font-size: 2.7rem;
+      font-weight: 700;
+      color: #0E1718;
+    }
+    .pic-description{
+      font-size: 1.9rem;
+      color: #0E1718;
+      margin-top: 0.8rem;
+    }
+    @media  only screen and (max-width: 1150px) {
+      width: 40rem;
+      .pic-title{
+        font-size: 2.4rem;
+      }
+      .pic-description{
+        font-size: 1.6rem;
+      }
+    }
+    @include for-phone-only{
+      width: 30rem;
+      padding: 1.1rem;
+      .pic-title{
+        font-size: 2rem;
+      }
+      .pic-description{
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.ant-card-meta-description{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}

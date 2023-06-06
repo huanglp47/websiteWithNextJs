@@ -1,0 +1,345 @@
+@import '~antd/dist/antd.css';
+@import "~slick-carousel/slick/slick.css";
+
+
+@mixin for-phone-only {
+    @media only screen and (max-width: 599px) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media  only screen and (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-landscape-up {
+    @media  only screen and (min-width: 900px) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media  only screen and (max-width: 1440px) { @content; }
+}
+
+
+html,
+body {
+  margin: 0;
+  font-family: "Source Han Sans CN" sans-serif;
+  -webkit-overflow-scrolling: touch;
+  font-size:10px;
+  overflow-x:hidden;
+  -webkit-text-size-adjust: none;
+
+  @include for-phone-only {
+      font-size: 6px;
+  }
+}
+@media  only screen  and (min-width: 1050px) and ( max-width: 1250px) {
+  body,html{
+    min-width: 1250px;
+    overflow-x: scroll;
+  }
+}
+
+main {
+    margin: 0;
+}
+
+.mobile-visible {
+    display: none;
+    @include for-phone-only {
+        display: block;
+    }
+}
+
+
+.mobile-invisible {
+    @include for-phone-only{
+        display: none;
+    }
+}
+
+@import "./home.scss";
+@import "./animation";
+@import "./header";
+@import "./footer";
+@import "./industry";
+@import "./hardware";
+@import "./project";
+@import "./solution";
+@import "./team";
+@import "./aboutus";
+@import "./news";
+@import "./newsList";
+
+.gallery-cover-a{
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  .gallery-cover-name{
+    z-index: 11;
+    position: absolute;
+    top: 10%;
+    left: 4.3rem;
+    .title1{
+      font-size: 3.4rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      @include for-phone-only {
+        font-size: 2rem;
+      }
+    }
+    .title2{
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: #FFFFFF;
+      @media  only screen and (max-width: 1150px) {
+        font-size: 1.6rem;
+      }
+    }
+    @media  only screen and (max-width: 1150px) {
+      left: 2.3rem;
+      .title1{
+        font-size: 2rem;
+      }
+      .title2{
+         font-size: 1.6rem;
+      }
+
+    }
+  }
+  .gallery-btn{
+    position: absolute;
+    bottom: 8%;
+    left: 4.3rem;
+    z-index: 11;
+    border: 0.02rem solid #FFFFFF;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.28rem 3rem;
+
+    &:after{
+      display: inline-block;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-left: 6px solid #FFFFFF;
+      border-bottom: 4px solid transparent;
+      margin-left: 5px;
+      vertical-align: 1px;
+    }
+    &:hover{
+      background: rgba(255,255,255,0.1);
+    }
+
+    @media  only screen and (max-width: 1150px) {
+      height: 4rem;
+      line-height: 4rem;
+      padding: 0 2rem;
+      font-size: 1.4rem;
+
+      left: 2.3rem;
+    }
+    @media  only screen and (max-width: 599px) {
+      display: none;
+    }
+  }
+
+}
+.gallery-cover{
+  transition: all 0.8s;
+  overflow: hidden;
+  &:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+  }
+}
+
+.layout-box {
+  display: flex;
+}
+
+.nowrap{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.line-clamp-3{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.introduction-title-all {
+  width: 100%;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #282828;
+  line-height: 34px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  justify-content: space-between;
+  .introduction-title-area{
+    font-size: 3.2rem;
+    line-height: 5rem;
+    margin-top: -2px;
+  }
+  .introduction-title-icon{
+    width: 0.7rem;
+    height: 3.4rem;
+    background: #1493FF;
+    margin-right: 1.5rem;
+  }
+  .system-composition-more{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #405160;
+    line-height: 2.6rem;
+  }
+
+  @include for-phone-only {
+    font-size: 3.2rem;
+  }
+  @media  only screen and (max-width: 1150px) {
+    font-size: 3.2rem;
+    width: 90%;
+  }
+}
+.port-title-all{
+  font-size: 3.2rem;
+  color: #282828;
+  line-height: 34px;
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  .port-title-icon{
+    width: 0.7rem;
+    height: 3.4rem;
+    background: #1493FF;
+    margin-right: 1.5rem;
+  }
+  .system-composition-more{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #405160;
+    line-height: 2.6rem;
+  }
+
+  @include for-phone-only {
+    font-size: 3.2rem;
+  }
+  @media  only screen and (max-width: 1150px) {
+    font-size: 3.2rem;
+    width: 90%;
+  }
+}
+.port-area{
+  .ant-card {
+    margin-bottom: 2rem;
+    background: #F3F9FF;
+  }
+  .ant-card-body{
+    background: #F3F9FF;
+    font-weight: 400;
+    color: #58718A;
+    line-height: 2.7rem;
+    .ant-card-meta-description{
+      font-size: 1.7rem;
+      color: #58718A;
+      -webkit-line-clamp: inherit!important;
+    }
+  }
+  .port-paragraph{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #828282;
+    line-height: 2.7rem;
+    margin-bottom: 2rem;
+  }
+  .image-desc{
+    color: #58718A!important;
+    background: #F3F9FF!important;
+  }
+  img{
+    padding-top: 0!important;
+  }
+}
+
+.ant-input {
+  box-sizing: border-box;
+  margin: 0;
+  font-variant: tabular-nums;
+  list-style: none;
+  font-feature-settings: "tnum";
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: #000000d9;
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  transition: all .3s
+}
+ant-input::-moz-placeholder {
+  opacity: 1
+}
+
+.ant-input::placeholder {
+  color: #bfbfbf;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none
+}
+
+.ant-input:-moz-placeholder-shown {
+  text-overflow: ellipsis
+}
+
+.ant-input:placeholder-shown {
+  text-overflow: ellipsis
+}
+
+.ant-input:hover {
+  border-color: #40a9ff;
+  border-right-width: 1px!important
+}
+textarea.ant-input {
+  max-width: 100%;
+  height: auto;
+  min-height: 32px;
+  line-height: 1.5715;
+  vertical-align: bottom;
+  transition: all .3s,height 0s
+}
+
+.hideMobile{
+  display: block;
+  @media  only screen and (max-width: 1150px) {
+    display: none;
+  }
+}

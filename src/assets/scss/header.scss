@@ -1,0 +1,214 @@
+.header-container {
+  height: 5.9rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9998;
+  background: white;
+  @include for-phone-only {
+    height: 7rem;
+  }
+}
+
+.header-mobile {
+  display: none;
+  height: 7rem;
+
+  .header-button {
+    position: absolute;
+    right: 2rem;
+    top: 1.3rem;
+    border: none;
+  }
+
+  .ant-btn-primary,
+  .ant-btn-primary:focus,
+  .ant-btn-primary:hover {
+    color: black;
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+  }
+  @include for-phone-only {
+    display: block;
+  }
+}
+
+
+.ant-dropdown-menu-dark {
+    background: black;
+}
+
+.bar {
+    max-height: 0.4em;
+    height: 0.4rem;
+    width: 3rem;
+    background: black;
+    border-color: transparent;
+    border-radius: 1.5px;
+    margin: 0.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+.expand-menu {
+    .bar:first-child {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .bar:nth-child(2) {
+        transform: scale(0);
+    }
+
+    .bar:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
+
+.dropdown-icon {
+    background: transparent;
+    position: relative;
+    flex-direction: column;
+}
+
+
+
+.ant-dropdown {
+  position: absolute;
+}
+
+.header-logo {
+  position: fixed;
+  width: 15rem;
+  top: 1rem;
+  //left: 9%;
+  left: 20%;
+  z-index: 9999;
+  @include for-desktop-up{
+    left: 9%;
+  }
+  @include for-phone-only {
+    top: 1.5rem;
+    left: 3rem;
+  }
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  height: 5.9rem;
+  justify-content: center;
+  align-items: center;
+  background: url("/static/media/header-banner.png") no-repeat;
+  background-position: top right;
+  background-size: 70% 100%;
+  font-size: 1.6rem;
+  @include for-desktop-up{
+    background-size: 74% 100%;
+  }
+  @include for-phone-only {
+    display: none;
+  }
+}
+
+.header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header li {
+  margin-left: 1em;
+  min-width: 4em;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+@media  only screen and (max-width: 1150px) {
+  .header-logo{
+    left: 4%!important;
+  }
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu{
+    padding: 0 10px!important;
+  }
+}
+.header .ant-menu {
+  width: 80%;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  .ant-menu-item:after {
+    border: none !important;
+  }
+  @include for-phone-only {
+    display: none;
+  }
+  @media  only screen and (max-width: 1150px) {
+    .ant-menu-overflow-item{
+      &:first-child{
+        margin-left: 20%;
+      }
+    }
+  }
+}
+
+.header .ant-menu-item a {
+  color: rgb(131, 131, 131) !important;
+}
+
+.header .ant-menu-item a:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3.4rem;
+  left: 10;
+  width: 10px;
+  height: 2px;
+  transition: all 0.15s linear;
+  border-radius: 1px;
+  background: rgb(131, 131, 131);
+}
+
+// 选中菜单状态
+.header .ant-menu-item-selected a {
+  color: white !important;
+}
+
+.header .ant-menu-item-selected a:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3.4rem;
+  left: 10;
+  width: 2.7rem;
+  height: 2.2px;
+  transition: all 0.2s linear;
+  border-radius: 1px;
+  background: rgb(255, 255, 255);
+}
+
+.header .ant-menu-item-active a {
+  color: white !important;
+}
+
+.header .ant-menu-item-active a:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3.4rem;
+  left: 10;
+  width: 2.7rem;
+  height: 2.2px;
+  transition: all 0.2s linear;
+  border-radius: 1px;
+  background: rgb(255, 255, 255);
+}

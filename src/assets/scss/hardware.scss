@@ -1,0 +1,103 @@
+.hardware-body {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.hardware-subtitle {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 7rem;
+
+  @include for-phone-only {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+.hardware-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 85%;
+  background: #f7f8f9;
+  color: #828282;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 7rem;
+
+  @include for-phone-only {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  img {
+    max-width: 17rem;
+    max-height: 20rem;
+  }
+
+  .card-cover {
+    padding-right: 7rem;
+    padding-left: 3rem;
+  }
+
+  .card-title {
+    font-size: 3.2rem;
+    padding-bottom: 1.8rem;
+
+    @include for-phone-only {
+      font-size: 2.2rem;
+    }
+  }
+
+  .card-content {
+    width: 65%;
+  }
+
+  .hardware-desc-col {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.4rem;
+    font-weight: lighter;
+
+    @include for-phone-only {
+      letter-spacing: 0;
+    }
+  }
+}
+
+.hardware-card:last-of-type {
+  margin-bottom: 7rem;
+}
+
+.hardware-cover{
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid #1493ff;
+  }
+}
+.anchor-wrapper{
+  text-align: center;
+  a{
+    padding-left:0!important;
+  }
+  .ant-anchor-link{
+    padding: 12px 0!important;
+  }
+  .ant-anchor-link-active{
+    border-left: solid 4px #2797FF !important;
+    color: #2797FF !important;
+    background: #fff;
+  }
+  .ant-anchor-ink-ball{
+    display: none !important;
+  }
+  .ant-anchor-ink-ball{
+    display: none !important;
+  }
+}

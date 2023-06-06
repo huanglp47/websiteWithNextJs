@@ -1,0 +1,73 @@
+.team {
+
+    padding-bottom: 8rem;
+
+  .team-subtitle {
+      font-size: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+
+  .team-intro {
+    width: 100%;
+    background: #fafafa;
+    width: 100%;
+    color: #828282;
+
+    .team-intro-unit {
+      img {
+          width: 5rem;
+      }
+
+      width: 33.3%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .team-intro-desc {
+        width: 75%;
+        padding-left: 1.6rem;
+        padding-top: 1.6rem;
+        padding-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .leader-intro {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      
+      .name {
+          width: 8rem;
+    
+      }
+
+      .leader-title {
+          font-size: 2rem;
+      }
+
+      .leader-intro-content {
+          width: 85%;
+          background: #FAFAFA;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: space-between;
+          padding: 3rem 2rem; 
+
+          .leader-detail {
+              color: #828282;
+              padding-top: 2rem;
+              padding-bottom: 2rem;
+          }
+      }
+  }
+
+  .patent {
+      width: 100%;
+  }
+}

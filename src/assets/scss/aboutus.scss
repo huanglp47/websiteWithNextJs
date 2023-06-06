@@ -1,0 +1,263 @@
+.aboutus-landing {
+  width: 100%;
+  //background: url("/static/media/aboutus/landing.png") no-repeat;
+  background: url("/static/media/aboutus/landing.jpg") no-repeat;
+  background-size: cover;
+  height: 48rem;
+  margin-top: 5.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  @include for-phone-only {
+    background-position: center;
+    height: 30rem;
+  }
+}
+
+.aboutus-doc {
+  width: 100%;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 360;
+
+  @include for-phone-only {
+    p {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+.news-card {
+  width: 100%;
+  display: grid;
+  padding: 3rem 0;
+
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+
+  border-top: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+
+  @include for-phone-only {
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+  }
+
+  .card-cover {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 8rem;
+    height: 100%;
+
+    a {
+      color: black;
+      text-decoration: none;
+      display: block;
+    }
+
+    @include for-phone-only {
+      align-items: center;
+      flex-direction: column;
+      padding: 5rem 0rem;
+      padding-bottom: 0rem;
+    }
+
+    .news-date {
+      padding: 1rem;
+      width: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border: #dcdcdc 1px solid;
+
+      @include for-phone-only {
+        padding: 2rem 3rem;
+        padding-bottom: 1rem;
+        width: 12rem;
+      }
+
+      .date-day {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .date-month {
+        font-size: 1.2rem;
+      }
+    }
+
+    .news-content {
+      width: 78%;
+      height: 100%;
+      position: relative;
+
+      @include for-phone-only {
+        width: 100%;
+        padding-top: 3rem;
+      }
+
+      .title {
+        font-size: 2.4rem;
+        font-weight: bold;
+
+        @include for-phone-only {
+          font-size: 3rem;
+        }
+      }
+
+      .content {
+        color: #828282;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+        @include for-phone-only {
+          font-size: 2.4rem;
+          padding-bottom: 6rem;
+        }
+      }
+
+      .more {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: #828282;
+      }
+
+      .pages {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: #878787;
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+.contact-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+  border: 1px solid rgba(217,217,217,0.5);
+  @include for-phone-only {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+  .contact-card-left{
+    margin-right: 10rem;
+    padding-left: 30px;
+    @media  only screen and (max-width: 1000px) {
+      margin-right: 5rem;
+      div{
+        font-size: 1.4rem!important;
+      }
+      a{
+        font-size: 1.4rem!important;
+      }
+    }
+    .mail-style{
+      display: inline-block;
+      font-weight: bold;
+      font-size: 2.2rem;
+      letter-spacing: 0.2rem;
+      padding-top: 0.8rem;
+    }
+    @include for-phone-only {
+      padding-bottom: 2rem;
+      margin-right: 0;
+    }
+  }
+  .contact-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.7rem;
+    letter-spacing: 0.03rem;
+    padding-left: 10rem;
+    border-left: 0.1rem solid #d9d9d9;
+    @media  only screen and (max-width: 1000px) {
+      padding-left: 5rem;
+    }
+    @include for-phone-only {
+      width: 90%;
+      letter-spacing: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 0rem;
+      padding-top: 3rem;
+      border-left: none;
+      border-top: 0.1rem solid #d9d9d9;
+    }
+
+    img {
+      height: 1.9rem;
+      padding-right: 1.4rem;
+
+      @include for-phone-only {
+        height: 3.5rem;
+        padding-right: 2rem;
+      }
+    }
+
+    .contact-address-phone {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      div{
+        font-size: 1.7rem;
+      }
+    }
+
+    .contact-address-location {
+      margin-top: 1.2rem;
+      .contact-address-sz{
+        margin-top: 0.2rem;
+        margin-left: 3.4rem;
+        @include for-phone-only {
+          margin-left: 5.4rem;
+        }
+      }
+      .contact-address-detail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        div:last-child {
+          padding-left: 0rem;
+          @include for-phone-only {
+            padding-left: 0;
+          }
+        }
+
+        @include for-phone-only {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+.pages-tab{
+  color: #1E1E20;
+  font-weight: 700
+}
+.page-tab-enable{
+  cursor: pointer;
+}

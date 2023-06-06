@@ -1,0 +1,406 @@
+
+//.home-content{
+//  cursor: pointer;
+//}
+
+#industry-solution{
+  margin: 0 auto;
+}
+.s-pc{
+  display: block;
+  .system-bg-item{
+    cursor: pointer;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  @media  only screen and (max-width: 1150px) {
+    display: none!important;
+  }
+}
+.s-mobile{
+  display: none;
+  .system-bg-item{
+    cursor: pointer;
+    width: 100%;
+  }
+  @media  only screen and (max-width: 1150px) {
+    display: block!important;
+  }
+}
+
+.system-composition{
+  flex-wrap: wrap;
+  .flex-item{
+    width: 22.5rem;
+    height: 23.2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .btn{
+      background: #1493FF;
+      border-radius: 16px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #FFFFFF;
+      padding: 5px 10px;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 1.4rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+  .system-bg-item{
+    width: 22.5rem;
+    height: 23.2rem;
+  }
+  .system-bg1{
+    background: url("/static/media/home/home1.png") no-repeat;
+    background-size: cover;
+  }
+  .system-btn1{
+    background: url("/static/media/home/home-top.png") no-repeat;
+    background-size: cover;
+  }
+
+  .system-bg2{
+    background: url("/static/media/home/home2.png") no-repeat;
+    background-size: cover;
+  }
+
+  .system-bg3{
+    background: url("/static/media/home/home3.png") no-repeat;
+    background-size: cover;
+  }
+  .system-btn3{
+    background: url("/static/media/home/home-right.png") no-repeat;
+    background-size: cover;
+  }
+
+  .system-bg4{
+    background: url("/static/media/home/home4.png") no-repeat;
+    background-size: cover;
+  }
+  .system-btn4{
+    background: url("/static/media/home/home-bottom-left.png") no-repeat;
+    background-size: cover;
+  }
+
+  .system-bg5{
+    background: url("/static/media/home/home5.png") no-repeat;
+    background-size: cover;
+  }
+  .system-btn5{
+    background: url("/static/media/home/home-left.png") no-repeat;
+    background-size: cover;
+  }
+  .system-bg-more{
+    background: #EEF7FF;
+    border: 1px solid #94CEFF;
+    box-shadow: 0px 0px 8px 1px rgba(82, 82, 82, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #1493FF;
+  }
+}
+
+.home-landing-public {
+  width: 100%;
+  background-size: cover;
+  height: 68rem;
+  margin-top: 5.9rem;
+
+  @include for-desktop-up {
+    height: 52rem;
+  }
+
+  @include for-phone-only {
+    margin-top: 5rem;
+    height: 30rem;
+  }
+}
+.home-landing-0 {
+  width: 100%;
+  background: url("/static/media/home/landing.jpg") no-repeat;
+  background-size: cover;
+  height: 68rem;
+
+  @include for-desktop-up {
+    height: 52rem;
+  }
+
+  @include for-phone-only {
+    margin-top: 5rem;
+    height: 30rem;
+  }
+}
+
+.home-landing-1 {
+  width: 100%;
+  background: url("/static/media/home/landing1.png") no-repeat;
+  background-size: cover;
+  height: 68rem;
+
+  @include for-desktop-up {
+    height: 52rem;
+  }
+
+  @include for-phone-only {
+    margin-top: 5rem;
+    height: 30rem;
+  }
+}
+
+.home-landing-2 {
+  width: 100%;
+  background: url("/static/media/home/landing2.png") no-repeat;
+  background-size: cover;
+  height: 68rem;
+
+  @include for-desktop-up {
+    height: 52rem;
+  }
+
+  @include for-phone-only {
+    margin-top: 5rem;
+    height: 30rem;
+    background-position: left;
+  }
+}
+
+.home-introduction-card {
+  padding-top: 5rem;
+  //padding-bottom: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .introduction-title {
+    width: 1131px;
+    font-size: 3.2rem;
+    color: #282828;
+    line-height: 34px;
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    .introduction-title-area{
+      font-size: 3.2rem;
+      line-height: 5rem;
+      margin-top: -2px;
+    }
+    .introduction-title-icon{
+      width: 0.7rem;
+      height: 3.4rem;
+      background: #1493FF;
+      margin-right: 1.5rem;
+    }
+    .system-composition-more{
+      font-size: 2rem;
+      font-weight: 500;
+      color: #405160;
+      line-height: 2.6rem;
+    }
+
+    @include for-phone-only {
+      font-size: 3.2rem;
+    }
+    @media  only screen and (max-width: 1150px) {
+      font-size: 3.2rem;
+      width: 90%;
+    }
+  }
+
+  .introduction-content {
+    width: 1131px;
+    @media only screen and (max-width: 1150px) {
+      width: 90%;
+    }
+
+    @include for-phone-only {
+      width: 90%;
+    }
+
+    .system-composition-more {
+      position: absolute;
+      right: 5rem;
+      bottom: 5rem;
+      display: block;
+      z-index: 9999;
+
+      @include for-phone-only {
+        right: 4rem;
+        bottom: 2rem;
+      }
+    }
+
+    .ant-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .ant-col {
+        width: 48%;
+        padding-bottom: 4rem;
+        .gallery-cover {
+          width: 100%;
+        }
+        .gallery-tag {
+          position: absolute;
+          bottom: 4.4rem;
+          right: 0;
+          height: 13%;
+        }
+      }
+      &:last-child{
+        .ant-col {
+          padding-bottom: 0rem;
+        }
+      }
+  }
+
+    .showcase {
+      width: 100%;
+      .carousel-card {
+        background: #F9F9F9;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+
+        @include for-phone-only {
+          margin: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .card-content {
+          width: 100%;
+          height: 100%;
+          padding-left: 3rem;
+          padding-right: 2rem;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          position: relative;
+          flex-direction: column;
+
+          .title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 2rem;
+
+            .block {
+              width: 5px;
+              height: 18px;
+              background: #1189ff;
+              margin-right: 1.2rem;
+            }
+
+            .text {
+              font-size: 1.9rem;
+            }
+          }
+
+          .card-content-a{
+            width: 100%;
+            height: 130px;
+            background: url("/static/media/home/a.jpg") no-repeat;
+            background-size: cover;
+          }
+          .card-content-b{
+            width: 100%;
+            height: 130px;
+            background: url("/static/media/home/b.jpg") no-repeat;
+            background-size: cover;
+          }
+        }
+
+        .card-cover {
+          width: 100%;
+          padding: 3rem 2rem;
+          display: flex;
+          align-items: center;
+
+          @include for-phone-only {
+            padding: 2rem 2rem;
+          }
+        }
+
+        .icon-block {
+          padding: 1.5rem 2rem;
+          font-size: 1.5rem;
+          width: 100%;
+          height: 31%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          .icon-block-unit {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            img {
+              padding: 0;
+              padding-right: 1rem;
+              height: 1.5rem;
+              width: auto;
+            }
+          }
+        }
+
+        .icon-grid {
+          display: grid;
+          margin-top: 2rem;
+          height: 40%;
+          width: 100%;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: 50% 50%;
+          @include for-phone-only {
+            margin-bottom: 2rem;
+          }
+
+          .icon-grid-unit {
+            padding: 1rem 1rem;
+            width: 75%;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background: #eeeeee;
+            font-size: 2rem;
+            border-radius: 2.5rem;
+
+            img {
+              height: 2.5rem;
+              padding-right: 2rem;
+              padding-bottom: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.home-content .ant-carousel .slick-dots button{
+  height:4px!important;
+}
