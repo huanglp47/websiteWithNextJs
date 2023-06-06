@@ -36,10 +36,11 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development next dev",
-    "build": "cross-env NODE_ENV=production next build",
+    "build": "next build",
     "start": "cross-env NODE_ENV=production next start",
     "lint": "next lint",
-    "server": "next build && next start"
+    "server": "next build && next start",
+    "export": "next export"
   },
   "eslintConfig": {
     "extends": [
