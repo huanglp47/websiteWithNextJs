@@ -3,14 +3,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   assetPrefix: isProd ? "./" : "",
-  exportTrailingSlash: true,
-     exportPathMap: function () {
-        return { 
-           '/project': {page: './project'},
-          '/hardware': {page: './hardware'},
-          '/aboutus': {page: './aboutus'},
-        };
-     },
+ 
   images: {
     disableStaticImages: true,
   },
