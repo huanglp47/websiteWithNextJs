@@ -36,7 +36,7 @@ const _ContactUs = () => {
         <div className="contact-card layout-box">
             <div className="contact-card-left">
                 <div style={_titleStyle}>了解更多资讯，发送邮件至</div>
-                <a href="javascript:;" className="mail-style">
+                <a  className="mail-style">
                     xx@qq.com
                 </a>
             </div>

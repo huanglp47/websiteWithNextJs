@@ -47,7 +47,7 @@ const _AppHeader = ({ router }) => {
         <Dropdown
           overlay={getMobileDropdown}
           trigger={["click"]}
-          onVisibleChange={setVisible}
+          onOpenChange={setVisible}
           className="header-button"
         >
           <div className={visible ? "expand-menu" : "dropdown-icon"}>

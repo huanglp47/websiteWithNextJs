@@ -102,10 +102,10 @@ export const AppFooter: React.FC = () => {
                         <ul className="footer-column">
                             <li className="footer-column-title">解决方案</li>
                             <li className="footer-column-item">
-                                <a href="javascript:;">基本服务</a>
+                                <a>基本服务</a>
                             </li>
                             <li className="footer-column-item">
-                                <a href="javascript:;">行业方案</a>
+                                <a>行业方案</a>
                             </li>
                         </ul>
                         <ul className="footer-column">
