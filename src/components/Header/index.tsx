@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Menu, Dropdown } from "antd";
 import { withRouter } from "next/router";
+import Link from 'next/link';
 
 const _AppHeader = ({ router }) => {
   const getPathName = () => {
@@ -24,17 +25,25 @@ const _AppHeader = ({ router }) => {
     return (
       <Menu onClick={handleClick} selectedKeys={[selection]} theme={"dark"}>
         <Menu.Item key={"/"}>
-          <a href="/">首页</a>
+            <Link href="/">
+                <a>首页</a>
+            </Link>
         </Menu.Item>
         <Menu.Item key={"project"}>
-          <a href="/project">核心技术</a>
+            <Link href="/project">
+                <a>核心技术</a>
+            </Link>
         </Menu.Item>
         <Menu.Item key={"hardware"}>
-          <a href="/hardware">产品中心</a>
+            <Link href="/hardware">
+                <a>产品中心</a>
+            </Link>
         </Menu.Item>
 
         <Menu.Item key={"aboutus"}>
-          <a href="/aboutus">关于我们</a>
+            <Link href="/aboutus">
+                <a>关于我们</a>
+            </Link>
         </Menu.Item>
       </Menu>
     );
@@ -64,19 +73,27 @@ const _AppHeader = ({ router }) => {
           onClick={handleClick}
           selectedKeys={[selection]}
         >
-          <Menu.Item key={"/"}>
-            <a href="/">首页</a>
-          </Menu.Item>
-          <Menu.Item key={"project"}>
-            <a href="/project">核心技术</a>
-          </Menu.Item>
-          <Menu.Item key={"hardware"}>
-            <a href="/hardware">产品中心</a>
-          </Menu.Item>
+            <Menu.Item key={"/"}>
+                <Link href="/">
+                    <a>首页</a>
+                </Link>
+            </Menu.Item>
+            <Menu.Item key={"project"}>
+                <Link href="/project">
+                    <a>核心技术</a>
+                </Link>
+            </Menu.Item>
+            <Menu.Item key={"hardware"}>
+                <Link href="/hardware">
+                    <a>产品中心</a>
+                </Link>
+            </Menu.Item>
 
-          <Menu.Item key={"aboutus"}>
-            <a href="/aboutus">关于我们</a>
-          </Menu.Item>
+            <Menu.Item key={"aboutus"}>
+                <Link href="/aboutus">
+                    <a>关于我们</a>
+                </Link>
+            </Menu.Item>
         </Menu>
       </div>
     </div>
