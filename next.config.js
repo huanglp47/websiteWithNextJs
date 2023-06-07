@@ -3,9 +3,17 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   assetPrefix: isProd ? "./" : "",
-//   images: {
-//     disableStaticImages: true,
-//   },
+  exportTrailingSlash: true,
+     exportPathMap: function () {
+        return { 
+           '/project': {page: './project'},
+          '/hardware': {page: './hardware'},
+          '/aboutus': {page: './aboutus'},
+        };
+     },
+  images: {
+    disableStaticImages: true,
+  },
   devIndicators: {
     buildActivity: false
   },
