@@ -2,8 +2,8 @@ const path = require("path");
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
-    basePath: isProd ? "/websiteWithNextJs" : '',
-    assetPrefix: isProd ? "./" : "",
+   basePath: isProd ? "/websiteWithNextJs" : '',
+    assetPrefix: isProd ? "/websiteWithNextJs/" : "",
  
   images: {
     disableStaticImages: true,
