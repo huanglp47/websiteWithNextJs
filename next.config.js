@@ -2,8 +2,8 @@ const path = require("path");
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
-    basePath: "/websiteWithNextJs",
-    assetPrefix: isProd ? "./" : "",
+    basePath: isProd ? "/websiteWithNextJs" : '',
+    assetPrefix: isProd ? "/websiteWithNextJs/" : "",
  
   images: {
     disableStaticImages: true,
@@ -18,8 +18,8 @@ module.exports = {
       test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
       loader: require.resolve("url-loader"),
       options: {
-        limit: 25000,
-        name: "static/media/[name].[hash:8].[ext]",
+          limit: 25000,
+          name: "static/media/[name].[hash:8].[ext]",
       },
     });
     return config;
